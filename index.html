@@ -29,12 +29,14 @@
     /* --------- Wrapper principal (transparente) --------- */
     .wrapper {
       width: 100%;
-      max-width: 800px;     /* Ajusta el ancho máximo del contenido */
+      max-width: 800px;
+      /* Ajusta el ancho máximo del contenido */
       margin: 0 auto;
       padding: 2rem 1rem;
       display: flex;
       flex-direction: column;
-      gap: 2rem;            /* Espacio vertical entre secciones */
+      gap: 2rem;
+      /* Espacio vertical entre secciones */
       /* Eliminamos cualquier fondo para que sea transparente */
       background-color: transparent;
     }
@@ -62,7 +64,8 @@
 
     /* --------- Bloques de entrevista --------- */
     .container {
-      width: 100%;          /* Ocupa todo el ancho del wrapper */
+      width: 100%;
+      /* Ocupa todo el ancho del wrapper */
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -127,9 +130,11 @@
       section h2 {
         font-size: 1.6rem;
       }
+
       .container header h3 {
         font-size: 1.2rem;
       }
+
       .container header p.desc,
       .container header p.institucion,
       .container header p.slogan {
@@ -148,16 +153,23 @@
     <section id="introduccion">
       <h2>La educación en Pereira: una mirada a quienes la imparten</h2>
       <p>
-        La educación es una parte esencial en la vida de cualquier ser humano, donde se convierte precisamente en ello: un humano. 
-        En su etapa educativa, una persona no solo aprende valores y habilidades blandas que usará para comunicarse y expresarse 
-        con sus iguales, sino que aprenderá aquellas habilidades más lógicas y menos abstractas, igual de necesarias para desempeñarse 
-        en la variedad de oficios y trabajos que la sociedad moderna ofrece. Esta educación debe ser impartida desde las etapas más 
-        tempranas de la vida del individuo, y se le debe de dar esta honorable labor a aquellas personas que sepan cómo debe ser 
+        La educación es una parte esencial en la vida de cualquier ser humano, donde se convierte precisamente en ello:
+        un humano.
+        En su etapa educativa, una persona no solo aprende valores y habilidades blandas que usará para comunicarse y
+        expresarse
+        con sus iguales, sino que aprenderá aquellas habilidades más lógicas y menos abstractas, igual de necesarias
+        para desempeñarse
+        en la variedad de oficios y trabajos que la sociedad moderna ofrece. Esta educación debe ser impartida desde las
+        etapas más
+        tempranas de la vida del individuo, y se le debe de dar esta honorable labor a aquellas personas que sepan cómo
+        debe ser
         cada aspecto y cada pequeño fragmento a través de todo este proceso: los docentes.
       </p>
       <p>
-        Este trabajo tiene como propósito explorar y descubrir las prácticas, vivencias y aprendizajes de los docentes de diversas 
-        instituciones. A través de entrevistas grabadas en formato de conversación, se busca reflejar la realidad del día a día en 
+        Este trabajo tiene como propósito explorar y descubrir las prácticas, vivencias y aprendizajes de los docentes
+        de diversas
+        instituciones. A través de entrevistas grabadas en formato de conversación, se busca reflejar la realidad del
+        día a día en
         el aula, sus desafíos, éxitos y proyecciones.
       </p>
     </section>
@@ -168,9 +180,12 @@
     <section id="objetivos">
       <h2>Objetivos del proyecto</h2>
       <ul>
-        <li><strong>Analizar</strong> las metodologías y recursos que emplean los profesores al enseñar en un contexto con alta diversidad social y económica.</li>
-        <li><strong>Documentar</strong> sus trayectorias profesionales, motivaciones y las lecciones más significativas que han recogido a lo largo de su carrera.</li>
-        <li><strong>Reflexionar</strong> sobre los retos y satisfacciones que implica su labor diaria en un entorno que funciona como espacio de crecimiento y comunidad.</li>
+        <li><strong>Analizar</strong> las metodologías y recursos que emplean los profesores al enseñar en un contexto
+          con alta diversidad social y económica.</li>
+        <li><strong>Documentar</strong> sus trayectorias profesionales, motivaciones y las lecciones más significativas
+          que han recogido a lo largo de su carrera.</li>
+        <li><strong>Reflexionar</strong> sobre los retos y satisfacciones que implica su labor diaria en un entorno que
+          funciona como espacio de crecimiento y comunidad.</li>
       </ul>
     </section>
 
@@ -183,7 +198,8 @@
         Se entrevistará a un grupo de docentes de diversas instituciones de Pereira.
       </p>
       <p>
-        Las entrevistas se realizarán en formato de conversación grabada en audio. No serán rígidamente estructuradas, sino que 
+        Las entrevistas se realizarán en formato de conversación grabada en audio. No serán rígidamente estructuradas,
+        sino que
         seguirán una guía basada en ejes temáticos. Los ejes principales a tratar serán:
       </p>
       <ul>
@@ -194,8 +210,10 @@
         <li><strong>Visión, aprendizajes y proyección</strong></li>
       </ul>
       <p>
-        Cada docente será informado sobre el propósito del proyecto, y se solicitará su consentimiento para grabar la conversación 
-        y utilizarla en un sitio web público con fines académicos y de divulgación. Podrán optar por aparecer con su nombre o con 
+        Cada docente será informado sobre el propósito del proyecto, y se solicitará su consentimiento para grabar la
+        conversación
+        y utilizarla en un sitio web público con fines académicos y de divulgación. Podrán optar por aparecer con su
+        nombre o con
         un seudónimo para mantener su identidad anónima.
       </p>
     </section>
@@ -276,7 +294,46 @@
       <!-- Repite el bloque anterior cambiando nombre, resumen, institución, frase y ruta de audio -->
       <!-- ... -->
     </section>
+
+
+    <!-- =========================================
+       5. COMENTARIOS DE ESTUDIANTES
+       ========================================= -->
+    <section id="comentarios">
+      <h2>Comentarios de estudiantes</h2>
+      <p>
+        A continuación, dos voces de quienes aspiran a ser docentes, compartiendo sus reflexiones sobre la actualidad
+        y el futuro de la educación
+      </p>
+
+      <div class="container">
+        <!-- Frase y audio de la Estudiante 1 -->
+        <p class="slogan">
+          “Muchos factores socioeconómicos afectan la educación”
+        </p>
+        <div class="audio-player">
+          <audio controls preload="none">
+            <source src="media/audio/estudiante-1.ogg" type="audio/wav">
+            Tu navegador no soporta la etiqueta de audio.
+          </audio>
+        </div>
+
+        <!-- Frase y audio de la Estudiante 2 -->
+        <p class="slogan">
+          “La educación está llena de retos”
+        </p>
+        <div class="audio-player">
+          <audio controls preload="none">
+            <source src="media/audio/estuddiante-2.ogg" type="audio/wav">
+            Tu navegador no soporta la etiqueta de audio.
+          </audio>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+
 
   <footer>
     © 2025 Proyecto final de Humanidades II – Universidad Tecnológica de Pereira
