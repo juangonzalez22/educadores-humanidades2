@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Los educadores de Pereira</title>
+  <style>
+    /* --------- Reset básico y tipografía --------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+
+      /* -- Fondo fijo de toda la página -- */
+      background: url("media/images/bg.jpg") no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* --------- Wrapper principal (transparente) --------- */
+    .wrapper {
+      width: 100%;
+      max-width: 800px;     /* Ajusta el ancho máximo del contenido */
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;            /* Espacio vertical entre secciones */
+      /* Eliminamos cualquier fondo para que sea transparente */
+      background-color: transparent;
+    }
+
+    /* --------- Estilos de cada sección (bloque blanco) --------- */
+    section {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      color: #2c3e50;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    section p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* --------- Bloques de entrevista --------- */
+    .container {
+      width: 100%;          /* Ocupa todo el ancho del wrapper */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1rem;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      background-color: #fafafa;
+    }
+
+    .container header {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .container header h3 {
+      font-size: 1.4rem;
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+    }
+
+    .container header p.desc {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+
+    .container header p.institucion {
+      font-size: 0.9rem;
+      color: #888;
+      margin-bottom: 0.75rem;
+      font-style: italic;
+    }
+
+    .container header p.slogan {
+      font-size: 0.9rem;
+      color: #777;
+      font-style: italic;
+      margin-bottom: 0.75rem;
+    }
+
+    .audio-player {
+      width: 100%;
+      margin-top: auto;
+    }
+
+    .audio-player audio {
+      width: 100%;
+      outline: none;
+    }
+
+    /* --------- Footer --------- */
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    /* --------- Responsive (móvil) --------- */
+    @media (max-width: 480px) {
+      section h2 {
+        font-size: 1.6rem;
+      }
+      .container header h3 {
+        font-size: 1.2rem;
+      }
+      .container header p.desc,
+      .container header p.institucion,
+      .container header p.slogan {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="wrapper">
+    <!-- ======================================================
+         1. TÍTULO Y DESCRIPCIÓN GENERAL DEL PROYECTO
+         ====================================================== -->
+    <section id="introduccion">
+      <h2>La educación en Pereira: una mirada a quienes la imparten</h2>
+      <p>
+        La educación es una parte esencial en la vida de cualquier ser humano, donde se convierte precisamente en ello: un humano. 
+        En su etapa educativa, una persona no solo aprende valores y habilidades blandas que usará para comunicarse y expresarse 
+        con sus iguales, sino que aprenderá aquellas habilidades más lógicas y menos abstractas, igual de necesarias para desempeñarse 
+        en la variedad de oficios y trabajos que la sociedad moderna ofrece. Esta educación debe ser impartida desde las etapas más 
+        tempranas de la vida del individuo, y se le debe de dar esta honorable labor a aquellas personas que sepan cómo debe ser 
+        cada aspecto y cada pequeño fragmento a través de todo este proceso: los docentes.
+      </p>
+      <p>
+        Este trabajo tiene como propósito explorar y descubrir las prácticas, vivencias y aprendizajes de los docentes de diversas 
+        instituciones. A través de entrevistas grabadas en formato de conversación, se busca reflejar la realidad del día a día en 
+        el aula, sus desafíos, éxitos y proyecciones.
+      </p>
+    </section>
+
+    <!-- ================================
+         2. OBJETIVOS
+         ================================ -->
+    <section id="objetivos">
+      <h2>Objetivos del proyecto</h2>
+      <ul>
+        <li><strong>Analizar</strong> las metodologías y recursos que emplean los profesores al enseñar en un contexto con alta diversidad social y económica.</li>
+        <li><strong>Documentar</strong> sus trayectorias profesionales, motivaciones y las lecciones más significativas que han recogido a lo largo de su carrera.</li>
+        <li><strong>Reflexionar</strong> sobre los retos y satisfacciones que implica su labor diaria en un entorno que funciona como espacio de crecimiento y comunidad.</li>
+      </ul>
+    </section>
+
+    <!-- ================================
+         3. METODOLOGÍA
+         ================================ -->
+    <section id="metodologia">
+      <h2>Metodología</h2>
+      <p>
+        Se entrevistará a un grupo de docentes de diversas instituciones de Pereira.
+      </p>
+      <p>
+        Las entrevistas se realizarán en formato de conversación grabada en audio. No serán rígidamente estructuradas, sino que 
+        seguirán una guía basada en ejes temáticos. Los ejes principales a tratar serán:
+      </p>
+      <ul>
+        <li><strong>Trayectoria y motivación</strong></li>
+        <li><strong>Metodologías y adaptación al contexto</strong></li>
+        <li><strong>Relación y clima en el aula</strong></li>
+        <li><strong>Retos cotidianos</strong></li>
+        <li><strong>Visión, aprendizajes y proyección</strong></li>
+      </ul>
+      <p>
+        Cada docente será informado sobre el propósito del proyecto, y se solicitará su consentimiento para grabar la conversación 
+        y utilizarla en un sitio web público con fines académicos y de divulgación. Podrán optar por aparecer con su nombre o con 
+        un seudónimo para mantener su identidad anónima.
+      </p>
+    </section>
+
+    <!-- ===========================================
+         4. ENTREVISTAS (Cada profesor en un bloque)
+         =========================================== -->
+    <section id="entrevistas">
+      <h2>Entrevistas a los educadores</h2>
+
+      <!-- ===== Bloque de entrevista 1 ===== -->
+      <div class="container">
+        <header>
+          <h3>Profesora Yazmin Ríos</h3>
+          <p class="desc">
+            Aquellos conflictos de los estudiantes, y cómo resolverlos con tranquilidad
+          </p>
+          <p class="institucion">
+            Institución Educativa Ciudad Boquía
+          </p>
+          <p class="slogan">
+            “Nunca hay una rutina, y para eso nos preparamos”
+          </p>
+        </header>
+        <section class="audio-player">
+          <audio controls preload="none">
+            <source src="media/audio/yazmin-rios.mp3" type="audio/wav">
+            Tu navegador no soporta la etiqueta de audio.
+          </audio>
+        </section>
+      </div>
+
+      <!-- ===== Bloque de entrevista 2 ===== -->
+      <div class="container">
+        <header>
+          <h3>Profesora Denisse Calderón</h3>
+          <p class="desc">
+            En la gran variedad de realidades de los estudiantes, hay que tomar con delicadeza cada una
+          </p>
+          <p class="institucion">
+            Escuela 30 de Agosto
+          </p>
+          <p class="slogan">
+            “La educación no está basada solamente en lo que se enseña desde las áreas”
+          </p>
+        </header>
+        <section class="audio-player">
+          <audio controls preload="none">
+            <source src="media/audio/denisse-calderon.mp3" type="audio/wav">
+            Tu navegador no soporta la etiqueta de audio.
+          </audio>
+        </section>
+      </div>
+
+      <!-- ===== Bloque de entrevista 3 ===== -->
+      <div class="container">
+        <header>
+          <h3>Profesora Adriana Vallejo y Profesor Carlos Enrique Buitrago</h3>
+          <p class="desc">
+            ¿Cómo los proyectos de aula y la ludificación pueden cambiar a los estudiantes?
+          </p>
+          <p class="institucion">
+            Institución Educativa María Dolorosa / Corporación Universitaria Remington
+          </p>
+          <p class="slogan">
+            “El desafío con los estudiantes es guiarlos a ser más productivos y más eficientes”
+          </p>
+        </header>
+        <section class="audio-player">
+          <audio controls preload="none">
+            <source src="media/audio/carlos-buitrago-y-adriana-vallejo.mp3" type="audio/wav">
+            Tu navegador no soporta la etiqueta de audio.
+          </audio>
+        </section>
+      </div>
+
+      <!-- ===== Bloque de entrevista 4, 5 ó 6 (si aplica) ===== -->
+      <!-- Repite el bloque anterior cambiando nombre, resumen, institución, frase y ruta de audio -->
+      <!-- ... -->
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Proyecto final de Humanidades II – Universidad Tecnológica de Pereira
+  </footer>
+
+</body>
+
+</html>
